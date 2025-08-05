@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propiedad - Servicios Inmobiliarios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background-color: #fff; color: #333; }
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #b30000;
+      margin-bottom: 1rem;
+    }
+    .services, .properties, .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 1rem; }
+    .contact {
+      background-color: #f8f8f8;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #b30000;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Propiedad">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#propiedades">Propiedades</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Compra y venta de inmuebles con confianza</h1>
+  </section>
+
+  <section class="section" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <div class="card-body">
+          <h3>Venta de propiedades</h3>
+          <p>Conectamos a propietarios con compradores interesados, gestionando cada paso con profesionalismo.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>Compra de inmuebles</h3>
+          <p>Ayudamos a encontrar el hogar ideal o la mejor inversión inmobiliaria según tu perfil.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3>Avalúos profesionales</h3>
+          <p>Valoraciones reales, confiables y certificadas para asegurar decisiones acertadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="propiedades">
+    <h2>Propiedades Destacadas</h2>
+    <div class="properties">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Casa 1">
+        <div class="card-body">
+          <h3>Casa Moderna en Quito</h3>
+          <p>3 habitaciones · 2 baños · $180,000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Casa 2">
+        <div class="card-body">
+          <h3>Apartamento en Cumbayá</h3>
+          <p>2 habitaciones · 1 baño · $120,000</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Casa 3">
+        <div class="card-body">
+          <h3>Terreno en Tumbaco</h3>
+          <p>500 m² · Ideal para proyecto residencial · $95,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="equipo">
+    <h2>Conoce a Nuestro Equipo</h2>
+    <div class="team">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Agente 1">
+        <div class="card-body">
+          <h3>Juan Pérez</h3>
+          <p>Director General</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Agente 2">
+        <div class="card-body">
+          <h3>María López</h3>
+          <p>Agente Inmobiliaria</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Agente 3">
+        <div class="card-body">
+          <h3>Carlos Gómez</h3>
+          <p>Especialista en Avalúos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea rows="5" placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Propiedad Servicios Inmobiliarios. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
